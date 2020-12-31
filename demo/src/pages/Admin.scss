@@ -1,0 +1,29 @@
+.conteiner {
+	display: flex;
+	.nav-left {
+		width: 15%;
+		min-width: calc(100%-40px);
+		height: calc(100vh);
+		background-color: #143f45;
+	}
+
+	.main {
+		flex: 1;
+		height: calc(100vh);
+
+		.content {
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			padding: 20px;
+
+			.left {
+				flex-grow: 1;
+			}
+
+			.right {
+				flex-grow: 2;
+			}
+		}
+	}
+}
